@@ -148,6 +148,8 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 vim.keymap.set({ 'n', 'v' }, '<C-d>', '<C-d>zz', { noremap = true })
 vim.keymap.set({ 'n', 'v' }, '<C-u>', '<C-u>zz', { noremap = true })
 
+vim.keymap.set({ 'n', 'v' }, '<leader>m', '<cmd>Man<CR>', { noremap = true })
+
 vim.api.nvim_create_autocmd('TextYankPost', {
   desc = 'Highlight when yanking (copying) text',
   group = vim.api.nvim_create_augroup('kickstart-highlight-yank', { clear = true }),
